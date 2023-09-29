@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="jaswan reddy" />
+    <meta
+      name="description"
+      content="A basic MySql tutorial website which helps to learn basic concepts of MySql and it contains several quiz questions which helps in better understanding and it contains links to various leetcode database questions which helps to imporve coding skills in database and this websote contians cheat sheet and handwritten notes pdf for quick revision."
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MySql tutorial</title>
+
+    <!-- FONT link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=IBM+Plex+Mono:wght@300;400;500;600;700&family=IBM+Plex+Sans+Condensed:wght@300;400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FAVICON link -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- JS link -->
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <!-- HEADER (NAVBAR) -->
+    <header class="header">
+      <div class="hamburger-menu">
+        <div class="line line-1"></div>
+        <div class="line line-2"></div>
+        <div class="line line-3"></div>
+      </div>
+      <div class="logo-section ff-logo">
+        <img
+          src="images/mysql-logo.png"
+          alt="mysql-logo"
+          class="logo-img md-icon"
+        />
+        <span class="bold">MySQL</span> tutorial
+      </div>
+    </header>
+    <!-- END OF HEADER -->
+
+    <!-- MAIN CONTAINER -->
+    <main>
+      <section class="main-container">
+        <!-- nav section -->
+        <nav class="content-nav">
+          <ul>
+            <h2 class="heading">Content</h2>
+            <!-- DATATYPES -->
+            <ul class="nav-section">
+              <h3>Datatypes</h3>
+              <li><a href="#int">int</a></li>
+              <li><a href="#float">decimal</a></li>
+              <li><a href="#bit">bit</a></li>
+              <li><a href="">boolean</a></li>
+              <li><a href="">char</a></li>
+              <li><a href="">varchar</a></li>
+              <li><a href="">text</a></li>
+              <li><a href="">date</a></li>
+              <li><a href="">time</a></li>
+              <li><a href="">datetime</a></li>
+            </ul>
+            <!-- MANAGING DATABASE -->
+            <ul class="nav-section">
+              <h3>Managing Database</h3>
+              <li><a href="">SHOW Database</a></li>
+              <li><a href="">USE Database</a></li>
+              <li><a href="">CREATE Database</a></li>
+              <li><a href="">DROP Database</a></li>
+            </ul>
+            <!-- OPERATORS -->
+            <ul class="nav-section">
+              <h3>Operators</h3>
+              <li><a href="">Arithmetic</a></li>
+              <li><a href="">Comparsion</a></li>
+              <li><a href="">Logical</a></li>
+              <li><a href="">String</a></li>
+              <li><a href="">Bitwise</a></li>
+              <li><a href="">Assignment</a></li>
+              <li><a href="">Null-Safe comparsion</a></li>
+            </ul>
+
+            <!-- CONSTRAINTS -->
+            <ul class="nav-section">
+              <h3>Constraints</h3>
+              <li><a href="">NOT null</a></li>
+              <li><a href="">Default</a></li>
+              <li><a href="">Auto Increment</a></li>
+              <li><a href="">Primary key</a></li>
+              <li><a href="">foreign key</a></li>
+              <li><a href="">Unique</a></li>
+              <li><a href="">check</a></li>
+            </ul>
+            <!-- MANAGING TABLES -->
+            <ul class="nav-section">
+              <h3>Managing Tables</h3>
+              <li><a href="">Create tables</a></li>
+              <li><a href="">Default</a></li>
+              <li><a href="">Auto Increment</a></li>
+              <li><a href="">Primary key</a></li>
+              <li><a href="">foreign key</a></li>
+              <li><a href="">Unique</a></li>
+              <li><a href="">check</a></li>
+            </ul>
+
+            <!-- select  -->
+            <ul class="nav-section">
+              <h3>Selecting tables</h3>
+              <li><a href="">selct using from</a></li>
+              <li><a href="">Default</a></li>
+              <li><a href="">Auto Increment</a></li>
+              <li><a href="">Primary key</a></li>
+              <li><a href="">foreign key</a></li>
+              <li><a href="">Unique</a></li>
+              <li><a href="">check</a></li>
+            </ul>
+            <!-- filtering data -->
+            <!-- set oprs -->
+            <!-- order by -->
+            <!-- group by -->
+            <!-- having -->
+            <!-- aggregate func -->
+            <!-- joins -->
+            <!-- subqueries -->
+            <!-- coorelated queries -->
+            <!-- dervied tables -->
+            <!-- functions -->
+            <!-- mis func -->
+            <!-- math functions -->
+            <!-- type conversion -->
+            <!-- str func -->
+            <!-- date functions -->
+          </ul>
+        </nav>
+        <!-- right main container -->
+        <section class="content-container">
+          <!-- int -->
+          <section class="section-container" id="int">
+            <h2>Datatypes</h2>
+            <h3>Int</h3>
+            <p>
+              int stands for integer i.e whole number without any fractional
+              component.
+            </p>
+            <p>It take 4 bytes for memory space</p>
+            <p>It can be signed or unsigned</p>
+            <p>
+              int or integer - 4 bytes ,smallint - 2 bytes, mediumint - 3
+              bytes,bigint - 8 bytes,tinyint - 1byte
+            </p>
+            <h4>int + autoincrement</h4>
+            <p>usually</p>
+            <div class="syntax">
+              <img
+                src="images/copy-light.png"
+                alt="copy-btn"
+                class="sm-icon copy-icon"
+              />
+              <h3 class="heading">syntax</h3>
+              <code class="code">SELECT * FROM TABLE_NAME</code>
+            </div>
+          </section>
+          <!-- flaot -->
+          <section class="section-container" id="flaot">
+            <h3>Float</h3>
+            <p>
+              int stands for integer i.e whole number without any fractional
+              component.
+            </p>
+            <p>It take 4 bytes for memory space</p>
+            <p>It can be signed or unsigned</p>
+            <p>
+              int or integer - 4 bytes ,smallint - 2 bytes, mediumint - 3
+              bytes,bigint - 8 bytes,tinyint - 1byte
+            </p>
+            <h4>int + autoincrement</h4>
+            <p>usually</p>
+            <div class="syntax">
+              <img
+                src="images/copy-light.png"
+                alt="copy-btn"
+                class="sm-icon copy-icon"
+              />
+              <h3 class="heading">syntax</h3>
+              <code class="code">SELECT * FROM TABLE_NAME</code>
+            </div>
+          </section>
+          <!-- bit -->
+          <section class="section-container" id="bit">
+            <h3>Bit</h3>
+            <p>
+              int stands for integer i.e whole number without any fractional
+              component.
+            </p>
+            <p>It take 4 bytes for memory space</p>
+            <p>It can be signed or unsigned</p>
+            <p>
+              int or integer - 4 bytes ,smallint - 2 bytes, mediumint - 3
+              bytes,bigint - 8 bytes,tinyint - 1byte
+            </p>
+            <h4>int + autoincrement</h4>
+            <p>usually</p>
+            <div class="syntax">
+              <img
+                src="images/copy-light.png"
+                alt="copy-btn"
+                class="sm-icon copy-icon"
+              />
+              <h3 class="heading">syntax</h3>
+              <code class="code">SELECT * FROM TABLE_NAME</code>
+            </div>
+          </section>
+        </section>
+      </section>
+    </main>
+    <!-- END OF MAIN CONTAINER -->
+  </body>
+</html>
